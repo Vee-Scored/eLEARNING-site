@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+
+  font-family: ;
+}
+
+.box {
+  display: flex;
+  position: relative;
+}
+
+.box > div {
+  position: relative;
+}
+.pre:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  border-top: 3px solid #0bbbcc;
+  width: 55%;
+  right: 0;
+}
+
+.pre:before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  border-bottom: 2.5px solid #0bbbcc;
+  right: 0;
+  width: 90%;
+}
+
+.over:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  border-top: 3px solid #0bbbcc;
+  left: 0;
+  width: 55%;
+}
+
+.over:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  border-bottom: 2.5px solid #0bbbcc;
+  bottom: 7px;
+}
+
+.pre {
+  width: 30%;
+}
+
+.p {
+  font-weight: 500;
+  width: 34%;
+  color: #0bbbcc;
+  font-size: 18px;
+}
+
+.over {
+  width: 30%;
+}
+
+.categories > ul > li > i {
+  color: #0bbbcc;
+  font-weight: bolder;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.categories > ul > li {
+  margin: 7px 0;
+}
+
+.owl-item.active.center .slider-card {
+  background-color: #0bbbcc;
+  color: whitesmoke;
+  transition: all 1s ease;
+}

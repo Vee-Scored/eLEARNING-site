@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .carousel-btn {
+    @apply border-[1px] border-slate-100 w-12 h-12  flex items-center justify-center  text-slate-100 my-3 text-xl hover:border-primary hover:bg-primary;
+  }
+
+  .feature-card {
+    @apply h-[300px]   bg-slate-100 flex items-center justify-center hover:bg-primary hover:text-slate-100 transition-all duration-500 hover:relative hover:-translate-y-[10px];
+  }
+
+  .cat-img {
+    @apply h-full w-full object-cover bg-center
+  }
+}
