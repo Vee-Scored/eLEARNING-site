@@ -27,4 +27,10 @@ $(document).ready(function () {
       },
     },
   });
+
+
+  $("#hamburgerBtn").add('click', function () {
+    $("#navbar-dropdown").show()
+  })
+
 });
