@@ -29,8 +29,29 @@ $(document).ready(function () {
   });
 
 
-  $("#hamburgerBtn").add('click', function () {
-    $("#navbar-dropdown").show()
-  })
+  // $("#hamburgerBtn").on('click', function () {
+  //  if(!$("#navbar-dropdown").hasClass("showNav")) {
+  //   $("#navbar-dropdown").addClass("showNav");
+  //   $("#navbar-dropdown").removeClass("hideNav");
+
+
+  //  } else {
+  //   $("#navbar-dropdown").removeClass("showNav")
+  //   $("#navbar-dropdown").addClass("hideNav")
+  //  }
+  // })
 
 });
+
+
+let child = document.querySelector('#child')
+document.querySelector('#btn').addEventListener('click', function () {
+if (child.classList.contains("navHide"))  {
+    document.querySelector("#child").classList.add("navShow")
+document.querySelector("#child").classList.remove("navHide")
+} else {
+    document.querySelector("#child").classList.remove("navShow")
+document.querySelector("#child").classList.add("navHide")
+}
+
+})
